@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_route" android:icon="@android:drawable/ic_menu_send"
+            android:title="Route Details" />
+        <item android:id="@+id/nav_budget" android:icon="@android:drawable/ic_menu_send"
+            android:title="Budget" />
+        <item android:id="@+id/nav_attraction" android:icon="@android:drawable/ic_menu_send"
+            android:title="Attractions" />
+
+
+    </group>
+
+    <item android:title="Utilites">
+        <menu>
+            <item android:id="@+id/nav_currency" android:icon="@android:drawable/ic_menu_send"
+                android:title="Currency Converter" />
+            <item android:id="@+id/nav_weather" android:icon="@android:drawable/ic_menu_send"
+                android:title="Weather" />
+        </menu>
+    </item>
+
+</menu>

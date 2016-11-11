@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/picture"
+        android:background="#000000"
+        />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <AutoCompleteTextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchBox"
+        android:hint="Enter Location"
+        android:autoText="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Search"
+        android:id="@+id/SearchButton"
+        android:onClick="onSearch"/>
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentTop="true"
+            android:background="#000000"
+            />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/map" tools:context=".MainActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_above="@+id/line1"
+            android:layout_below="@+id/line"/>
+        <ImageButton
+            android:id="@+id/WALKimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/walking"
+            android:layout_above="@+id/HorizontalScroll"
+            android:layout_toLeftOf="@+id/PTimage"
+            android:background="#00FFFFFF"
+            android:onClick="walkbtn"/>
+        <ImageButton
+            android:id="@+id/PTimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pt2"
+            android:layout_above="@+id/HorizontalScroll"
+            android:layout_toLeftOf="@+id/TAXIimage"
+            android:background="#00FFFFFF"
+            android:onClick="ptbtn"/>
+        <ImageButton
+            android:id="@+id/TAXIimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/taxi"
+            android:layout_above="@+id/HorizontalScroll"
+            android:layout_alignParentRight="true"
+            android:background="#00FFFFFF"
+            android:onClick="taxibtn"/>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_above="@+id/HorizontalScroll"
+            />
+
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalScroll"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/MBS_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_mbs"
+                    android:background="@drawable/location_mbs"
+                    android:layout_gravity="center"
+                    android:onClick="locationMBS"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+                <Button
+                    android:id="@+id/SF_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_sf"
+                    android:background="@drawable/location_sf"
+                    android:layout_gravity="center"
+                    android:onClick="locationSF"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+                <Button
+                    android:id="@+id/VC_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_vc"
+                    android:background="@drawable/location_vc"
+                    android:layout_gravity="center"
+                    android:onClick="locationVC"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+                <Button
+                    android:id="@+id/RWS_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_rws"
+                    android:background="@drawable/location_rws"
+                    android:layout_gravity="center"
+                    android:onClick="locationRWS"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+                <Button
+                    android:id="@+id/BTRT_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_btrt"
+                    android:background="@drawable/location_btrt"
+                    android:layout_gravity="center"
+                    android:onClick="locationBTRT"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+                <Button
+                    android:id="@+id/ZOO_Location"
+                    android:layout_width="140dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/location_zoo"
+                    android:background="@drawable/location_zoo"
+                    android:layout_gravity="center"
+                    android:onClick="locationZOO"
+                    android:layout_margin="2dp"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"
+                    />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#AAFFFFFF"
+            android:id="@+id/backgroundLayout">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="#CCFFFFFF"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="0dp"
+            android:paddingLeft="0dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:id="@+id/budgetLayout">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CC000000"
+                android:layout_alignParentTop="true"
+                android:id="@+id/view" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#CC000000"
+                android:layout_alignParentLeft="true"
+                />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#CC000000"
+                android:layout_below="@+id/view"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/view2" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CC000000"
+                android:layout_alignBottom="@+id/view2"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cancel"
+                android:onClick="cancelbtn"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@+id/button"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Budget(SGD): "
+                    android:id="@+id/textView5" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/BudgeteditText"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Enter Budget" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Budget"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="SetBudget"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Set your budget for today"
+                android:id="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageButton"
+                android:textSize="25dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Boots of Travel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_clear">Clear all Locations</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="rounte_details">Route Details</string>
+    <string name="budget">Budget</string>
+    <string name="currecy">Currency</string>
+    <string name="weather">Weather</string>
+    <string name="allattractions">Attractions</string>
+    <string name="language">Language</string>
+
+    <string-array name="attractions">
+        <item>Marina Bay Sands</item>
+        <item>Singapore Flyer</item>
+        <item>Vivo City</item>
+        <item>Resorts World Sentosa</item>
+        <item>Buddha Tooth Relic Temple</item>
+        <item>Singapore Zoo</item>
+    </string-array>
+
+    <string-array name="ratings">
+        <item>Rating: 4.5/5</item>
+        <item>Rating: 4.0/5</item>
+        <item>Rating: 3.5/5</item>
+        <item>Rating: 5.0/5</item>
+        <item>Rating: 4.0/5</item>
+        <item>Rating: 4.5/5</item>
+    </string-array>
+
+
+
+</resources>

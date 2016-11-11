@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/mbs"/>
+
+    <TextView
+        android:id="@+id/attraction"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@+id/picture"
+        android:text="Name of Attraction"
+        android:gravity="center"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:text="This is the Rating"
+        android:gravity="center"
+        android:textColor="#000000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/picture"
+        android:background="#000000"
+        />
+
+
+
+</RelativeLayout>

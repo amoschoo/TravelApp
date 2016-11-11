@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_clear" android:title="@string/action_clear"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/optimisedRoute" android:title="Optimised Route"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/defaultRoute" android:title="Default Route"
+    android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/satelliteview" android:title="Satellite View"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/normalview" android:title="Normal View"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/directions" android:title="Directions"
+        android:icon="@drawable/route"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@+id/wideview" android:title="WideView"
+        android:icon="@drawable/zoom"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+</menu>

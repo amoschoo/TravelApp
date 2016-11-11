@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.amos.travelapp.Pages.Attractions_VC">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details"
+        android:id="@+id/VCdetail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="77dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/vc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Rating 3.5/5.0"
+        android:id="@+id/textView12"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Type: Shopping"
+        android:id="@+id/textView11"
+        android:layout_above="@+id/textView12"
+        android:layout_toEndOf="@+id/imageView5" />
+
+</RelativeLayout>
